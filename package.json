@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup/issues"
   },
-  "homepage": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup#readme"
+  "homepage": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
+  }
 }
