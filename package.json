@@ -1,24 +1,27 @@
 {
-  "name": "backend-nodejs-project-setup",
-  "version": "1.0.0",
-  "description": "This repository provides a structured and efficient setup guide for backend projects using Node.js and Express.js. It includes essential configurations, best practices, and tools to ensure a scalable and maintainable backend application.",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup.git"
-  },
-  "author": "Parth Baldaniya <parthbaldaniya9090@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup/issues"
-  },
-  "homepage": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup#readme",
-  "devDependencies": {
-    "@types/node": "^22.13.5",
-    "typescript": "^5.7.3"
-  }
+    "name": "backend-nodejs-project-setup",
+    "version": "1.0.0",
+    "description": "This repository provides a structured and efficient setup guide for backend projects using Node.js and Express.js. It includes essential configurations, best practices, and tools to ensure a scalable and maintainable backend application.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node src/server.js",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup.git"
+    },
+    "author": "Parth Baldaniya <parthbaldaniya9090@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup/issues"
+    },
+    "homepage": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup#readme",
+    "devDependencies": {
+        "@types/node": "^22.13.5",
+        "prettier": "3.5.2",
+        "typescript": "^5.7.3"
+    }
 }
