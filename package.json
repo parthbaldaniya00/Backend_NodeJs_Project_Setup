@@ -1,34 +1,40 @@
 {
-    "name": "backend-nodejs-project-setup",
-    "version": "1.0.0",
-    "description": "This repository provides a structured and efficient setup guide for backend projects using Node.js and Express.js. It includes essential configurations, best practices, and tools to ensure a scalable and maintainable backend application.",
-    "main": "index.js",
-    "scripts": {
-        "dev": "node src/server.js",
-        "format:fix": "prettier . --write",
-        "format:check": "prettier . --check",
-        "lint:fix": "eslint . --fix",
-        "lint:check": "eslint .",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup.git"
-    },
-    "author": "Parth Baldaniya <parthbaldaniya9090@gmail.com>",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup/issues"
-    },
-    "homepage": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup#readme",
-    "devDependencies": {
-        "@eslint/eslintrc": "^3.3.0",
-        "@eslint/js": "^9.21.0",
-        "@types/node": "^22.13.5",
-        "@typescript-eslint/eslint-plugin": "^8.24.1",
-        "@typescript-eslint/parser": "^8.24.1",
-        "eslint": "^9.21.0",
-        "prettier": "3.5.2",
-        "typescript": "^5.7.3"
-    }
+  "name": "backend-nodejs-project-setup",
+  "version": "1.0.0",
+  "description": "This repository provides a structured and efficient setup guide for backend projects using Node.js and Express.js. It includes essential configurations, best practices, and tools to ensure a scalable and maintainable backend application.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "format:fix": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint:fix": "eslint . --fix",
+    "lint:check": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup.git"
+  },
+  "author": "Parth Baldaniya <parthbaldaniya9090@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup/issues"
+  },
+  "homepage": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup#readme",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^22.13.5",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "eslint": "^9.21.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "3.5.2",
+    "typescript": "^5.7.3"
+  },
+  "lint-staged": {
+    "*.ts": ["npm run format:fix", "npm run lint:fix"]
+  }
 }
