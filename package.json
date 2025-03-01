@@ -35,6 +35,12 @@
     "typescript": "^5.7.3"
   },
   "lint-staged": {
-    "*.ts": ["npm run format:fix", "npm run lint:fix"]
+    "*.ts": [
+      "npm run format:fix",
+      "npm run lint:fix"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
   }
 }
