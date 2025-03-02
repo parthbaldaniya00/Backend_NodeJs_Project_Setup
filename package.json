@@ -1,59 +1,59 @@
 {
-  "name": "backend-nodejs-project-setup",
-  "version": "1.0.0",
-  "description": "This repository provides a structured and efficient setup guide for backend projects using Node.js and Express.js. It includes essential configurations, best practices, and tools to ensure a scalable and maintainable backend application.",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon src/server.ts",
-    "format:fix": "prettier . --write",
-    "format:check": "prettier . --check",
-    "lint:fix": "eslint . --fix",
-    "lint:check": "eslint .",
-    "test": "jest --watch --runInBand",
-    "prepare": "husky"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup.git"
-  },
-  "author": "Parth Baldaniya <parthbaldaniya9090@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup/issues"
-  },
-  "homepage": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup#readme",
-  "devDependencies": {
-    "@eslint/eslintrc": "^3.3.0",
-    "@eslint/js": "^9.21.0",
-    "@types/express": "^5.0.0",
-    "@types/http-errors": "^2.0.4",
-    "@types/jest": "^29.5.14",
-    "@types/node": "^22.13.5",
-    "@types/supertest": "^6.0.2",
-    "@types/winston": "^2.4.4",
-    "@typescript-eslint/eslint-plugin": "^8.24.1",
-    "@typescript-eslint/parser": "^8.24.1",
-    "eslint": "^9.21.0",
-    "husky": "^9.1.7",
-    "jest": "^29.7.0",
-    "lint-staged": "^15.4.3",
-    "nodemon": "^3.1.9",
-    "prettier": "3.5.2",
-    "supertest": "^7.0.0",
-    "ts-jest": "^29.2.6",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "npm run format:fix",
-      "npm run lint:fix"
-    ]
-  },
-  "dependencies": {
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "http-errors": "^2.0.0",
-    "winston": "^3.17.0"
-  }
+    "name": "backend-nodejs-project-setup",
+    "version": "1.0.0",
+    "description": "This repository provides a structured and efficient setup guide for backend projects using Node.js and Express.js. It includes essential configurations, best practices, and tools to ensure a scalable and maintainable backend application.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/server.ts",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check",
+        "lint:fix": "eslint . --fix",
+        "lint:check": "eslint .",
+        "test": "jest --watch --runInBand",
+        "prepare": "husky"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup.git"
+    },
+    "author": "Parth Baldaniya <parthbaldaniya9090@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup/issues"
+    },
+    "homepage": "https://github.com/parthbaldaniya00/Backend_NodeJs_Project_Setup#readme",
+    "devDependencies": {
+        "@eslint/eslintrc": "^3.3.0",
+        "@eslint/js": "^9.21.0",
+        "@types/express": "^5.0.0",
+        "@types/http-errors": "^2.0.4",
+        "@types/jest": "^29.5.14",
+        "@types/node": "^22.13.5",
+        "@types/supertest": "^6.0.2",
+        "@types/winston": "^2.4.4",
+        "@typescript-eslint/eslint-plugin": "^8.24.1",
+        "@typescript-eslint/parser": "^8.24.1",
+        "eslint": "^9.21.0",
+        "husky": "^9.1.7",
+        "jest": "^29.7.0",
+        "lint-staged": "^15.4.3",
+        "nodemon": "^3.1.9",
+        "prettier": "3.5.2",
+        "supertest": "^7.0.0",
+        "ts-jest": "^29.2.6",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.3"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npm run format:fix",
+            "npm run lint:fix"
+        ]
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "http-errors": "^2.0.0",
+        "winston": "^3.17.0"
+    }
 }
